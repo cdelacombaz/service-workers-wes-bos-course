@@ -1,4 +1,3 @@
-// lets go!
 import {drawToCanvas, populateVideo} from "./src/video";
 import {countdown, takePhoto} from "./src/photo";
 
