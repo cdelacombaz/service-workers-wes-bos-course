@@ -1,5 +1,5 @@
-import {drawToCanvas, populateVideo} from "/src/video.js";
-import {countdown, takePhoto} from "/src/photo.js";
+import {drawToCanvas, populateVideo} from "./src/video.js";
+import {countdown, takePhoto} from "./src/photo.js";
 
 async function start() {
     const videoEl = document.querySelector('video');
