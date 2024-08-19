@@ -54,8 +54,8 @@ start();
 // Register Service Worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', async () => {
-        const registration = await navigator.serviceWorker.register('./service-worker.js', {
-            scope: '/',
+        const registration = await navigator.serviceWorker.register('/service-workers-wes-bos-course.github.io/service-worker.js', {
+            scope: '/service-workers-wes-bos-course.github.io/',
         });
         // Registration was successful
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
