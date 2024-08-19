@@ -1,6 +1,7 @@
 import {drawToCanvas, populateVideo} from "./src/video";
 import {countdown, takePhoto} from "./src/photo";
 
+
 async function start() {
     const videoEl = document.querySelector('video');
     const canvasEl = document.querySelector('canvas');
