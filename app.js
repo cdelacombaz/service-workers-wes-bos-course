@@ -57,7 +57,6 @@ if ('serviceWorker' in navigator) {
             scope: '/',
         });
         // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
         registration.onupdatefound = () => {
             alert('Hey, there is an update to this app! Just refresh your browser to see');
         };
