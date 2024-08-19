@@ -23,7 +23,7 @@ async function start() {
         button.addEventListener('click', async function () {
             clearInterval(interval);
             // lazy load the filters
-            const filters = await import('./src/filters');
+            const filters = await import('./src/filters.js');
             console.log("=>(app.js:28) filters", filters);
             interval = setInterval(() => {
                 drawToCanvas(videoEl, canvasEl, filters[this.dataset.filter]);
