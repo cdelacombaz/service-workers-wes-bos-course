@@ -1,4 +1,4 @@
-import {wait} from '../lib/waait.js';
+import {wait} from '../lib/waait';
 
 export function takePhoto(video, canvas, strip) {
   console.log('Taking photooo');

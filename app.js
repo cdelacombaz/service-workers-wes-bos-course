@@ -1,5 +1,5 @@
-import {drawToCanvas, populateVideo} from "./src/video.js";
-import {countdown, takePhoto} from "./src/photo.js";
+import {drawToCanvas, populateVideo} from "./src/video";
+import {countdown, takePhoto} from "./src/photo";
 
 async function start() {
     const videoEl = document.querySelector('video');
@@ -57,6 +57,7 @@ if ('serviceWorker' in navigator) {
             scope: '/',
         });
         // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
         registration.onupdatefound = () => {
             alert('Hey, there is an update to this app! Just refresh your browser to see');
         };
