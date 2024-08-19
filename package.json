@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "homepage": "https://cdelacombaz.github.io/service-workers-wes-bos-course.github.io/",
   "directories": {
     "lib": "lib"
   },
