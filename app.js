@@ -49,3 +49,18 @@ if (module.hot) {
         window.location.reload();
     });
 }
+
+// Register Service Worker
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', async () => {
+        const registration = await navigator.serviceWorker.register('./service-worker.js', {
+            scope: '/',
+        });
+        registration.onupdatefound = () => {
+            alert('Hey, there is an update to this app! Just refresh your browser to see');
+        };
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        // TODO: listen for updates
+    });
+}
