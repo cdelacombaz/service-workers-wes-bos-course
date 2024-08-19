@@ -56,11 +56,10 @@ if ('serviceWorker' in navigator) {
         const registration = await navigator.serviceWorker.register('./service-worker.js', {
             scope: '/',
         });
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
         registration.onupdatefound = () => {
             alert('Hey, there is an update to this app! Just refresh your browser to see');
         };
-        // Registration was successful
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        // TODO: listen for updates
     });
 }
